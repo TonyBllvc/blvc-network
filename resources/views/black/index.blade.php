@@ -2,18 +2,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Blvc Network </title>
+    <title> Blvc Network | List </title>
 </head>
 <body>
     
     <h1>
-        Welcome to the Black Network
+        Currently available list
     </h1>
-    <p> Click the button below to view the list of Back </p>
-
-    <a href="/black" class="btn">
-        Find Blacks
-    </a>
+    
+    <ul>
+        <li> List here </li>
+    </ul>
 
 </body>
 </html>
