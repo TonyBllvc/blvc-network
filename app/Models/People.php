@@ -13,4 +13,9 @@ class People extends Model
 
     /** @use HasFactory<\Database\Factories\PeopleFactory> */
     use HasFactory;
+
+    // Tells Eloquent that a People belongs to a Platform
+    public function platform() {
+        return $this->belongsTo(Platform::class);
+    }
 }

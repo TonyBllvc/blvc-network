@@ -14,8 +14,8 @@
             <h1>
                 <a href='/'> Black Network</a>
             </h1>
-            <a class="text-slate-600 hover:text-red-400 hover:border-b hover:border-red-500 transition-all duration-700" href="/black" > All Black list</a>
-            <a class="text-slate-600 hover:text-red-400 hover:border-b hover:border-red-500 transition-all duration-700" href="/black/create" > Add list </a>
+            <a class="text-slate-600 hover:text-red-400 hover:border-b hover:border-red-500 transition-all duration-700" href="{{ route('black.index') }}" > All Black list</a>
+            <a class="text-slate-600 hover:text-red-400 hover:border-b hover:border-red-500 transition-all duration-700" href="{{ route('black.create') }}" > Add list </a>
         </nav>
     </header>
 

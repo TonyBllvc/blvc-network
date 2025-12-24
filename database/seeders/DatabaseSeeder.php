@@ -21,5 +21,11 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+        
+        $this->call([ // Hierarchical call to other seeders is important to ensure proper seeding order
+            // Make such the parent seeder classes come first, before the child seeder classes.
+            PlatformSeeder::class,
+            PeopleSeeder::class
+        ]);
     }
 }

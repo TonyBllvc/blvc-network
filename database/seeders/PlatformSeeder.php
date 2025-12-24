@@ -4,15 +4,15 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\People;
+use App\Models\Platform;
 
-class PeopleSeeder extends Seeder
+class PlatformSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        People::factory()->count(10)->create();
+        Platform::factory()->count(6)->create();
     }
 }

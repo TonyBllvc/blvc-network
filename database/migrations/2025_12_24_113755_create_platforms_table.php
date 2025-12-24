@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('people', function (Blueprint $table) {
+        Schema::create('platforms', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer("skill");
-            $table->text("bio");
-            $table->foreignId('platform_id')->constrained()->onDelete('cascade');
-            $table->timestamps();  // creates two time stamps by default, "created_at" & "updated_at"
+            $table->string('location');
+            $table->text('description');
+            $table->timestamps();
         });
     }
 
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('people');
+        Schema::dropIfExists('platforms');
     }
 };
