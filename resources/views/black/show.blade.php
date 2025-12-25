@@ -18,4 +18,11 @@
       <p>{{ $black->platform->description }}</p>
     </div>
   
+    <!-- delete person form -->
+    <form action="{{ route('black.destroy', $black->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this person?');">
+      @csrf
+      @method('DELETE')
+      <button type="submit" class="btn btn-danger">Delete Person</button>
+    </form>
+
 </x-layout>

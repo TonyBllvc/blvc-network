@@ -9,6 +9,12 @@
 </head>
 <body>
 
+    @if(session('success'))
+        <div class="bg-green-100 text-green-800 text-center px-4 py-2 mb-4">
+            {{ session('success') }}
+        </div>
+    @endif
+
     <header>
         <nav>
             <h1>
